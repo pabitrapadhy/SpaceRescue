@@ -82,7 +82,7 @@ void GameOverScene::callGameOverPopup()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
 
-    auto congratzText = Label::createWithTTF("Mission Over !", "fonts/space.ttf", 100);
+    auto congratzText = Label::createWithTTF("Mission Over !", "fonts/space.ttf", 80);
     congratzText->setPosition(Vec2(origin.x + visibleSize.width/2, origin.y + visibleSize.height/5*4));
     this->addChild(congratzText);
 
