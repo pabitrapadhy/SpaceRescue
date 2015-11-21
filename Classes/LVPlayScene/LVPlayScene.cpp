@@ -64,7 +64,6 @@ bool PlayScene::init()
     this->_levelNumArray = __Array::create();
     this->_levelNumArray->retain();
 
-    UserDefault::getInstance()->getIntegerForKey("myscore", 0);
     UserDefault::getInstance()->setIntegerForKey("myscore", score);
     
     this->initializeGameElements();
